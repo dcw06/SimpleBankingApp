@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SimpleBankingApp</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .policy-container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        .policy-container h1 {
+            color: #1E3A8A;
+            margin-bottom: 30px;
+        }
+        .policy-container h2 {
+            color: #1E3A8A;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        .policy-container p, .policy-container li {
+            color: #1F2937;
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+        .policy-container ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        .last-updated {
+            color: #6B7280;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #1E3A8A;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🏦</span>
+                SimpleBankingApp
+            </div>
+        </div>
+    </nav>
+
+    <div class="policy-container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: March 23, 2026</p>
+
+        <h2>1. Introduction</h2>
+        <p>SimpleBankingApp ("we", "us", "our", or "Company") operates this application. This Privacy Policy explains our practices regarding information collection, use, and protection.</p>
+
+        <h2>2. Information We Collect</h2>
+        <p>We collect information you provide directly:</p>
+        <ul>
+            <li><strong>Google Account Information:</strong> When you sign in with Google, we receive your name, email address, and profile picture</li>
+            <li><strong>Account Data:</strong> Account balances, transaction history, and account names you create</li>
+            <li><strong>Bank Connection Data:</strong> When linking Bank of America via Plaid, we receive account information through secure Plaid integration (we never store your banking credentials)</li>
+            <li><strong>Device Information:</strong> Basic device information for troubleshooting</li>
+        </ul>
+
+        <h2>3. How We Use Your Information</h2>
+        <ul>
+            <li>To provide and maintain the SimpleBankingApp service</li>
+            <li>To authenticate your identity and secure your account</li>
+            <li>To process deposits and transfers</li>
+            <li>To improve and optimize the application</li>
+            <li>To comply with legal obligations</li>
+        </ul>
+
+        <h2>4. Data Security</h2>
+        <p>We implement industry-standard security measures to protect your personal information:</p>
+        <ul>
+            <li>Data encryption for sensitive information</li>
+            <li>Secure HTTPS connections for all communications</li>
+            <li>Regular security audits and updates</li>
+            <li>Local data storage with encryption</li>
+        </ul>
+
+        <h2>5. Third-Party Integrations</h2>
+        <p><strong>Google Authentication:</strong> We use Google OAuth for secure sign-in. See Google's privacy policy: https://policies.google.com/privacy</p>
+        <p><strong>Plaid Integration:</strong> We use Plaid to securely link your Bank of America account. Plaid never shares your bank credentials with us. See Plaid's privacy policy: https://plaid.com/legal</p>
+
+        <h2>6. Data Storage</h2>
+        <p>Your data is stored locally on your computer in an encrypted JSON file at:</p>
+        <p><code>~/.SimpleBankingApp/bank_data.json</code></p>
+        <p>We do not maintain servers or upload your data to external services (except through Plaid for bank connections).</p>
+
+        <h2>7. Your Rights</h2>
+        <ul>
+            <li><strong>Access:</strong> You can access all your data stored in the app</li>
+            <li><strong>Delete:</strong> You can delete your account and all associated data at any time</li>
+            <li><strong>Export:</strong> You can export your data in standard formats</li>
+        </ul>
+
+        <h2>8. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy periodically. We will notify you of major changes by updating the "Last Updated" date.</p>
+
+        <h2>9. Contact Us</h2>
+        <p>If you have questions about this Privacy Policy, please contact us through GitHub:</p>
+        <p>GitHub: https://github.com/dcw06/SimpleBankingApp/issues</p>
+
+        <h2>10. Compliance</h2>
+        <p>SimpleBankingApp complies with:</p>
+        <ul>
+            <li>GDPR (General Data Protection Regulation) for EU users</li>
+            <li>CCPA (California Consumer Privacy Act) for California users</li>
+            <li>Standard data protection practices for all users</li>
+        </ul>
+    </div>
+
+    <footer class="footer" style="margin-top: 60px;">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 SimpleBankingApp. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
