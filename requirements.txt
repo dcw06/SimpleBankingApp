@@ -1,0 +1,1 @@
+# No external requirements for the basic version
