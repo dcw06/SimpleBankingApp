@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Deletion - FinWise</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .policy-container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        .policy-container h1 { color: #1E3A8A; margin-bottom: 30px; }
+        .policy-container h2 {
+            color: #1E3A8A;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        .policy-container p, .policy-container li {
+            color: #1F2937;
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+        .policy-container ul { margin-left: 20px; margin-bottom: 15px; }
+        .last-updated { color: #6B7280; font-style: italic; margin-bottom: 30px; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #1E3A8A;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .steps {
+            background: #F0F4FF;
+            border-left: 4px solid #1E3A8A;
+            padding: 20px 24px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        .steps ol { margin-left: 20px; }
+        .steps li { margin-bottom: 8px; color: #1F2937; line-height: 1.7; }
+        .contact-box {
+            background: #F9FAFB;
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            padding: 20px 24px;
+            margin: 20px 0;
+        }
+        .contact-box a { color: #1E3A8A; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🛡</span>
+                FinWise
+            </div>
+        </div>
+    </nav>
+
+    <div class="policy-container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+        <h1>User Data Deletion</h1>
+        <p class="last-updated">Last Updated: March 26, 2026</p>
+
+        <p>FinWise respects your right to control your personal data. This page explains what data we hold and how to have it deleted.</p>
+
+        <h2>What Data We Store</h2>
+        <ul>
+            <li><strong>Account profile:</strong> Your name and email address obtained when you sign in with Facebook, Google, or another provider</li>
+            <li><strong>App data:</strong> Account balances, transaction history, and settings you create inside FinWise — stored locally on your device</li>
+            <li><strong>No server storage:</strong> FinWise stores all data locally on your computer. We do not maintain a central database of user records.</li>
+        </ul>
+
+        <h2>How to Delete Your Data</h2>
+
+        <h2>Option 1 — Delete from within the app (recommended)</h2>
+        <div class="steps">
+            <ol>
+                <li>Open FinWise on your computer</li>
+                <li>Go to <strong>Settings → Account</strong></li>
+                <li>Click <strong>"Delete My Account"</strong></li>
+                <li>Confirm the deletion — all local data will be permanently erased</li>
+            </ol>
+        </div>
+
+        <h2>Option 2 — Delete the data file manually</h2>
+        <div class="steps">
+            <ol>
+                <li>Close FinWise</li>
+                <li>Open Finder and press <strong>Cmd + Shift + G</strong></li>
+                <li>Type <code>~/.FinWise</code> and press Enter</li>
+                <li>Delete the <code>bank_data.json</code> file — this removes all stored account data</li>
+            </ol>
+        </div>
+
+        <h2>Option 3 — Contact us</h2>
+        <p>If you signed in with Facebook and would like us to confirm deletion of any data associated with your Facebook account, contact us and we will respond within 30 days:</p>
+        <div class="contact-box">
+            <p><strong>Email:</strong> <a href="mailto:chongwei.dai06@gmail.com">chongwei.dai06@gmail.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/dcw06/SimpleBankingApp/issues" target="_blank">github.com/dcw06/SimpleBankingApp/issues</a></p>
+            <p>Please include "Data Deletion Request" in the subject line and the email address associated with your account.</p>
+        </div>
+
+        <h2>Facebook-Specific Data</h2>
+        <p>When you sign in with Facebook, FinWise only requests your public profile (name and email). We do not store this data on any server. To revoke FinWise's access to your Facebook account independently:</p>
+        <div class="steps">
+            <ol>
+                <li>Go to <strong>Facebook Settings → Security and Login → Apps and Websites</strong></li>
+                <li>Find <strong>FinWise</strong> (or Simple Banking App) and click <strong>Remove</strong></li>
+            </ol>
+        </div>
+
+        <p>We will process all deletion requests and confirm completion within <strong>30 days</strong>.</p>
+    </div>
+
+    <footer class="footer" style="margin-top: 60px;">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 FinWise. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
