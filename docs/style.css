@@ -308,25 +308,79 @@ body {
 /* Install Instructions */
 .install-instructions {
     background: var(--card-bg);
-    padding: 30px;
+    padding: 36px;
     border-radius: 12px;
-    max-width: 600px;
+    max-width: 680px;
     margin: 0 auto;
 }
 
 .install-instructions h3 {
     color: var(--primary);
-    margin-bottom: 20px;
+    margin-bottom: 28px;
+    font-size: 20px;
 }
 
-.install-instructions ol {
-    margin-left: 20px;
+.install-step {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 28px;
+    align-items: flex-start;
+}
+
+.step-number {
+    background: var(--primary);
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.step-content h4 {
+    color: var(--text-dark);
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.step-content p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.step-content p:last-child {
+    margin-bottom: 0;
+}
+
+.sub-steps {
+    margin: 10px 0 10px 18px;
     color: var(--text-dark);
 }
 
-.install-instructions li {
-    margin-bottom: 12px;
+.sub-steps li {
+    margin-bottom: 6px;
     line-height: 1.6;
+}
+
+.tip {
+    background: var(--bg-light);
+    border-left: 3px solid var(--accent);
+    padding: 8px 12px;
+    border-radius: 0 6px 6px 0;
+    font-size: 13px !important;
+    color: var(--text-dark) !important;
+}
+
+.optional {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-light);
 }
 
 .install-instructions code {
@@ -334,7 +388,7 @@ body {
     padding: 2px 6px;
     border-radius: 4px;
     font-family: 'Monaco', monospace;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 /* Security Section */
